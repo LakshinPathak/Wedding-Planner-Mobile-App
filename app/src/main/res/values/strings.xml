@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MOS_Innovative</string>
+    <string name="image_description">Wedding option image</string>
+<string-array name="venue_type">
+    <item>Indoor</item>
+    <item>Outdoor</item>
+    <item>Beach</item>
+    <item>Garden</item>
+</string-array>
+
+<string-array name="wedding_seasons">
+    <item>Spring</item>
+    <item>Summer</item>
+    <item>Autumn</item>
+    <item>Winter</item>
+</string-array>
+</resources>

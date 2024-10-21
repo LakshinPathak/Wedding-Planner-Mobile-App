@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFE0"
+    >
+
+    <!-- Horizontal Layout for Bride and Groom Images -->
+    <LinearLayout
+        android:id="@+id/imagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFE0"
+        >
+
+        <!-- Bride Image View -->
+        <ImageView
+            android:id="@+id/brideImageView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Bride Image"
+            android:background="#FFFFE0" />
+
+        <!-- Groom Image View -->
+        <ImageView
+            android:id="@+id/groomImageView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Groom Image"
+            android:background="#FFFFE0"/>
+    </LinearLayout>
+
+    <!-- TextView for displaying invitation message -->
+    <TextView
+        android:id="@+id/invitationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:visibility="gone" /> <!-- Initially hidden -->
+
+    <!-- Buttons for selecting images -->
+    <Button
+        android:id="@+id/selectBrideImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Bride Image"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FFFFE0"/>
+    <Button
+        android:id="@+id/selectGroomImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Groom Image"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FFFFE0"/>
+
+    <!-- EditText for Guest's Name -->
+    <EditText
+        android:id="@+id/guestNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Guest's Name"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:inputType="textPersonName" />
+
+    <!-- Button to Send Invitation -->
+    <Button
+        android:id="@+id/sendInvitationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Invitation"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FFFFE0"/>
+
+    <!-- LinearLayout for dynamic content (PDF button) -->
+    <LinearLayout
+        android:id="@+id/invitationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
+</LinearLayout>

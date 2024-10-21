@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFE0">
+
+    <EditText
+        android:id="@+id/editTextGuestCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Guest Count"
+        android:inputType="number"
+        android:minHeight="48dp"
+    android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextFoodCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Food Cost per Guest"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+    android:padding="12dp" />
+
+    <Button
+        android:id="@+id/buttonCalculateCatering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Catering Cost"
+        android:minHeight="48dp"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"/> <!-- Optional margin for spacing -->
+
+    <!-- TextView to display the total cost -->
+    <TextView
+        android:id="@+id/textViewTotalCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Catering Cost: $0.00"
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFE0">
+
+        <!-- Wedding Theme Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Wedding Preferences"
+            android:textSize="24sp"
+            android:textColor="#c2185b"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Color Preference Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred Colors:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputColors"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="E.g., Pink, White, Gold"
+            android:inputType="text" />
+
+        <!-- Venue Type Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue Type:"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <Spinner
+            android:id="@+id/inputVenue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/venue_type" />
+
+        <!-- Season Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding Season:"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <Spinner
+            android:id="@+id/inputSeason"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/wedding_seasons" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnGetTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Get AI Theme Suggestions"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Result Text -->
+        <TextView
+            android:id="@+id/themeSuggestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:visibility="gone"
+            android:padding="16dp"
+            android:background="#ffffff"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:gravity="start"
+            android:backgroundTint="#ffffff"
+            android:scrollbars="vertical" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" /> <!-- Initially hidden -->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,270 @@
+<!--&lt;!&ndash; res/layout/activity_signup.xml &ndash;&gt;-->
+<!--&lt;!&ndash; xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:padding="32dp"-->
+<!--android:background="@color/white">-->
+
+
+
+<!--    &lt;!&ndash; App Image &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewLogo"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@drawable/wedding_logo"-->
+<!--        android:layout_below="@id/toolbar"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp" />-->
+
+<!--    &lt;!&ndash; App Description &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewDescription"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Welcome to the Wedding Planner App!"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_below="@id/imageViewLogo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+
+<!--    <EditText-->
+<!--    android:id="@+id/editTextUsername"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="Username"-->
+<!--        android:layout_below="@id/textViewDescription"-->
+<!--    android:layout_marginBottom="16dp"/>-->
+
+<!--<EditText-->
+<!--    android:id="@+id/editTextEmail"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="Email"-->
+<!--    android:layout_below="@id/editTextUsername"-->
+<!--    android:layout_marginBottom="16dp"/>-->
+
+<!--<EditText-->
+<!--    android:id="@+id/editTextPassword"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="Password"-->
+<!--    android:layout_below="@id/editTextEmail"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    android:inputType="textPassword"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/buttonSignUp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Sign Up"-->
+<!--    android:layout_below="@id/editTextPassword"/>-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textViewLogin"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Already have an account? Login"-->
+<!--    android:layout_below="@id/buttonSignUp"-->
+<!--    android:layout_marginTop="16dp"-->
+<!--    android:textColor="@color/black"/>-->
+
+<!--</RelativeLayout>-->
+
+
+
+<!--&lt;!&ndash; res/layout/activity_signup.xml &ndash;&gt;-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="32dp"-->
+<!--    android:background="@color/white">-->
+
+<!--    &lt;!&ndash; Toolbar (optional) &ndash;&gt;-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:elevation="4dp"-->
+<!--        android:title="Sign Up"-->
+<!--        android:titleTextColor="@color/white" />-->
+
+<!--    &lt;!&ndash; App Image &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewLogo"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/wedding_logo"-->
+<!--        android:layout_below="@id/toolbar"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp" />-->
+
+<!--    &lt;!&ndash; App Description &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewDescription"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Welcome to the Wedding Planner App!"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_below="@id/imageViewLogo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    &lt;!&ndash; Username Input &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/editTextUsername"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Username"-->
+<!--        android:layout_below="@id/textViewDescription"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:inputType="textPersonName" />-->
+
+<!--    &lt;!&ndash; Email Input &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/editTextEmail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Email"-->
+<!--        android:layout_below="@id/editTextUsername"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:inputType="textEmailAddress" />-->
+
+<!--    &lt;!&ndash; Password Input &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/editTextPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Password"-->
+<!--        android:layout_below="@id/editTextEmail"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:inputType="textPassword" />-->
+
+<!--    &lt;!&ndash; Sign Up Button &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonSignUp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Sign Up"-->
+<!--        android:background="@color/royalblue"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_below="@id/editTextPassword"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    &lt;!&ndash; Login Redirect Text &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewLogin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Already have an account? Login"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_below="@id/buttonSignUp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--</RelativeLayout>-->
+
+
+
+
+<!-- res/layout/activity_signup.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE0"
+    android:padding="32dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar (optional) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:title="Sign Up"
+            android:titleTextColor="@color/white" />
+
+        <!-- App Image -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/wedding_logo"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <!-- App Description -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Wedding Planner App!"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_below="@id/textViewDescription"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_below="@id/editTextUsername"
+            android:layout_marginTop="16dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+
+            android:textColor="@color/white"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="16dp" />
+
+        <!-- Login Redirect Text -->
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="@color/black"
+            android:layout_below="@id/buttonSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+</ScrollView>

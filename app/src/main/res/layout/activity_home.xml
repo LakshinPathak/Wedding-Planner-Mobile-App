@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp"
+        android:background="#FFFFE0">
+
+        <TextView
+            android:id="@+id/textViewCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding Planner App"
+            android:textColor="#c2185b"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCreator"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textColor="#c2185b" />
+        <!-- App Image -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/img123"
+            android:layout_below="@id/welcomeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/editTextBrideName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Bride's Name"
+            android:padding="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextGroomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBrideName"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Groom's Name"
+            android:padding="12dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonPlanWedding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextGroomName"
+            android:layout_marginTop="16dp"
+            android:text="Plan a Wedding" />
+
+        <Button
+            android:id="@+id/buttonCatering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPlanWedding"
+            android:layout_marginTop="16dp"
+            android:text="Manage Catering" />
+
+        <Button
+            android:id="@+id/buttonWeddingTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCatering"
+            android:layout_marginTop="16dp"
+            android:text="Choose Wedding Theme" />
+
+        <Button
+            android:id="@+id/buttonInvitations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonWeddingTheme"
+            android:layout_marginTop="16dp"
+            android:text="Send Invitations" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonInvitations"
+            android:layout_marginTop="16dp"
+            android:text="Exit" />
+
+    </RelativeLayout>
+</ScrollView>
